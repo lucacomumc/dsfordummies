@@ -17,3 +17,7 @@ Um DataFrame é como uma tabela bidimensional no Excel, mas dessa vez, no Python
 - Colunas
 - Dados heterogêneos (diferentes tipos em diferentes colunas)
 ![DataFrame no Python](/imgs/dataframe.svg)
+
+### Series
+As Series nada mais são que as colunas em nossos DataFrames, caso fizessemos um recorte dos dados somente de uma coluna, isso seria uma "Series"
+![Series no Python](/imgs/Series.svg)
