@@ -37,7 +37,7 @@ print(notas)
 
 # Acessando uma coluna específica:
 print('Notas de matemática:')
-print(notas['Matemática'])cle
+print(notas['Matemática'])
 
 # Selecionando um subconjunto de dados:
 print('Alunos com nota de Matemática acima de 80')
