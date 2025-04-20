@@ -47,3 +47,20 @@ print(notas[notas['Matemática'] > 80])
 notas['Média'] = (notas['Matemática'] + notas['Português'] + notas['Ciências']) / 3
 print('DataFrame com a coluna de média:')
 print(notas)
+
+# Ordenação de dados
+
+# Ordenando por uma coluna (ordem crescente):
+notas_ordenadas = notas.sort_values(by='Matemática')
+print('Ordenado por notas de Matemática (crescente):')
+print(notas_ordenadas)
+
+# Ordenando por uma coluna (ordem decrescente):
+notas_decrescente = notas.sort_values(by='Matemática', ascending=False)
+print('\nOrdenado por notas de Matemática (decrescente):')
+print(notas_decrescente)
+
+# Ordenando por múltiplas colunas:
+notas_mult = notas.sort_values(by=['Português','Matemática'], ascending=[False,True])
+print('\nOrdenado por Português (decrescente) e Matemática (crescente):')
+print(notas_mult)

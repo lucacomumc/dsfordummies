@@ -21,3 +21,8 @@ Um DataFrame é como uma tabela bidimensional no Excel, mas dessa vez, no Python
 ### Series
 As Series nada mais são que as colunas em nossos DataFrames, caso fizessemos um recorte dos dados somente de uma coluna, isso seria uma "Series"
 ![Series no Python](/imgs/Series.svg)
+
+### Filtragem de dados
+Na filtragem de dados com pandas, quando usamos a sintaxe `notas['Coluna'] > 80` criamos uma máscara boolena - um array com valores True e False para cada linha onde True indica que a condição foi satisfeita. Depois, essa máscara é usada dentro dos colchetes `notas[]` para selecionar apenas as linhas onde o valor é True.
+
+![Filtragem no pandas](/imgs/Filtragem.svg)
